@@ -42,3 +42,17 @@ bash
 jupyter notebook cleaning_estabelecimentos.ipynb
 Este notebook realiza limpeza de colunas, tratamento de valores nulos e salva os dados em .csv e .parquet.
 
+⚙️ Dados Utilizados
+Fonte Oficial
+Dataset: Estabelecimentos0 (parte do arquivo K3241.K03200Y0.D50111.ESTABELE).
+
+Origem: Dados Abertos da Receita Federal (2025-01).
+
+Descrição: Contém informações cadastrais de estabelecimentos comerciais no Brasil (ex: CNPJ, endereço, CNAE, situação cadastral).
+
+Por que os dados não estão no repositório?
+Os arquivos originais são muito grandes (ex: Estabelecimentos0 tem ~XX GB).
+
+Política do GitHub: Limite de arquivos acima de 100MB.
+
+Direitos de uso: Os dados são públicos, mas redistribuição em massa não é recomendada.
