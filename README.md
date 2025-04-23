@@ -1,47 +1,44 @@
-# 📊 PROJETO DE ANÁLISE DE ESTABELECIMENTOS COMERCIAIS DE SÃO PAULO
+# 📬 Projeto Sistema de Mensageria
 
-![Banner](https://example.com/banner-projeto-sp.jpg) **(adicione um banner relevante se disponível)*
+Este projeto implementa um sistema de mensageria utilizando Python. Foi desenvolvido com foco em modularidade, testes e facilidade de uso.
 
-## 📌 VISÃO GERAL
-Pipeline de dados para tratamento e análise de estabelecimentos comerciais no estado de São Paulo, incluindo:
-
-- **Filtragem** de dados brutos por UF (SP)
-- **Limpeza** e padronização de registros
-- **Exportação** para formatos otimizados (Parquet/CSV comprimido)
-
-## 🛠 TECNOLOGIAS PRINCIPAIS
-| Tecnologia       | Versão   | Uso Principal                |
-|------------------|----------|------------------------------|
-| Python           | 3.11.12  | Linguagem base               |
-| Pandas           | 2.2.3    | Manipulação de dados         |
-| PyArrow          | 19.0.1   | Formato Parquet              |
-| Jupyter Notebook | 6.5.4    | Análise interativa           |
-
-## 📂 ESTRUTURA DO PROJETO
+## 📁 Estrutura do Projeto
 
 
-## 🚀 COMEÇANDO
+## ⚙️ Tecnologias Utilizadas
 
-### Pré-requisitos
-- Miniconda/Anaconda instalado
-- Windows 10/11 (testado em build 19045+)
-- 4GB RAM livre
+- Python 3.10+
+- Conda (opcional)
+- Bibliotecas: `pandas`, `requests`
 
-### Instalação
+## 🚀 Como Executar
 
-# 1. Criar ambiente Conda
-conda env create -f environment.yml
+### 1. Clonar o repositório
 
-# 2. Ativar ambiente
-conda activate becomex
+```bash
+git clone https://github.com/felipetamiozzo/ProjetoSistemaMensageria.git
+cd ProjetoSistemaMensageria
 
-📈 FLUXO DE PROCESSAMENTO
-## Filtragem inicial:
+2. Criar ambiente (opcional)
+bash
+
+conda env create -f environment.yaml
+conda activate mensageria
+
+Ou instalar via pip:
 
 bash
-python src/tratar_empresas_sp.py
 
-## Análise e limpeza:
+pip install -r requirements.txt
+
+3. Executar o filtro de dados de São Paulo
+python tratar_empresas_SP.py
+
+4. Executar o tratamento e limpeza dos dados
+Abrir e correr o notebook:
 
 bash
-jupyter notebook notebooks/cleaning_estabelecimentos.ipynb
+
+jupyter notebook cleaning_estabelecimentos.ipynb
+Este notebook realiza limpeza de colunas, tratamento de valores nulos e salva os dados em .csv e .parquet.
+
