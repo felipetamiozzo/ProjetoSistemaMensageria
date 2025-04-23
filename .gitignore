@@ -1,0 +1,28 @@
+# Ignorar dados e ficheiros grandes
+/dados-publicos/
+/estabelecimentos_SP*
+*.csv
+*.parquet
+*.zip
+*.rar
+
+# Ignorar ambientes e configs locais
+environment
+*.env
+*.log
+*.yaml
+*.yml
+__pycache__/
+*.pyc
+.venv/
+.conda/
+*.ipynb_checkpoints
+
+# Ignorar ficheiros de sistema e IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Outras pastas do utilizador que não são essenciais para o código
+/guia do projeto/
